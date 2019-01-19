@@ -2,8 +2,12 @@
 TinkerLCD Ver 1.0
 
 A set of menu files for duet 3D printerboards when using with 12864 lcd displays
+
 Head to the "Display Editor" tab in the duet web interface and upload all top level files. 
 
+Then add the following line somewhere in your config.g file:
+
+M918 P1 					   ;initialize display
 
 
 
