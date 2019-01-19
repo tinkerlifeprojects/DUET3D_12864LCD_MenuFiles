@@ -1,0 +1,42 @@
+;
+; "Not printing" Menu
+button R0 C0 F0 V5 W42 T"Print" A"menu listFilesSD0"
+button V5 W44 T"Move" A"menu move"
+button V5 W42 T"Menu" A"menu listMenu"
+;
+; "Printing" Menu
+button R0 C0 F0 W64 V2 T"Pause" A"M25"
+button W64 V2 T"Filament" A" M25|menu filament" L"filament"
+;
+; "Paused" Menu
+button R0 C0 F0 W42 V6 T"Resume" A"M24"
+button W44 V6 T"Filament" A" M25|menu filament" L"filament"
+button W42 V6 T"Abort" A"M0 H1|menu main" L"main"
+;
+image R11 C0 L"hline.img"
+;
+button R25 C6 F1 T" « " A"return"
+;
+;text R14 C30 F0 T"Flow"
+image R14 C40 L"flowrate.img"
+alter C65 F0 N400 W25 H2
+text T"%"
+;
+;text R26 C30 F0 T"Feedrate"
+image R26 C40 L"feedrate.img"
+alter C65 N500 W25 H2
+text T"%"
+;
+;text R38 C35 F0 T"Z Offset"
+image R38 C40 L"zstep.img"
+alter C65 D2 N521 W25 H2
+text T" mm"
+;
+image R53 C0 L"hline.img"
+text R54 C17 F0 T"X "
+value N510 W25
+text T" Y "
+value N511 W25
+text T" Z "
+value N512 D2 W30
+;value R52 C5 N501

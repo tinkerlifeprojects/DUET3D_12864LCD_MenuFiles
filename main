@@ -1,0 +1,51 @@
+;
+; "Not printing" Menu
+button R0 C0 F0 V5 W42 T"Print" A"menu listFilesSD0"
+image V5 L"vline.img"
+button V5 W42 T"Move" A"menu move"
+image V5 L"vline.img"
+button V5 W42 T"Menu" A"menu listMenu"
+;
+; "Printing" Menu
+button R0 C0 F0 W64 V2 T"Pause" A"M25"
+button W63 V2 T"Filament" A" M25|menu filament" L"filament"
+;
+; "Paused" Menu
+button R0 C0 F0 W42 V6 T"Resume" A"M24"
+image V6 L"vline.img"
+button W42 V6 T"Filament" A" M25|menu filament" L"filament"
+image V6 L"vline.img"
+button W42 V6 T"Abort" A"M0 H1|menu main" L"main"
+;
+image R11 C0 L"hline.img"
+;
+;text R14 C17 F0 T"Bed"
+image R14 C25 L"bed.img"
+alter R14 C40 N180 W20 H2
+text T" / "
+value N80 W20
+text T"°C"
+;
+;text R26 C17 F0 T"E0"
+image R26 C25 L"temp.img"
+alter C40 N100 W20 H2
+text T" / "
+value N0 W20
+text T"°C"
+;
+;text R38 C17 F0 T"Fan"
+image R38 C25 L"fan.img"
+alter C40 N301 W20 H2
+text T" %"
+button C77 F0 T" OFF " A"M106 P1 S0"
+;
+button R25 C104 F1 T" » " A"menu altMain" L"altMain"
+;
+image R53 C0 L"hline.img"
+text R54 C17 F0 T"X "
+value N510 W25
+text T" Y "
+value N511 W25
+text T" Z "
+value N512 D2 W30
+;value R52 C5 N501

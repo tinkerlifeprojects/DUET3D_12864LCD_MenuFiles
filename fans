@@ -1,0 +1,25 @@
+button R0 C0 W35 F0 T"Back" A"return"
+image C35 L"vline.img
+text R0 C36 W92 H1 F0 T"FAN CONTROL"
+image R11 C0 L"hline.img"
+;
+image R14 C28 L"fan0.img"
+;text R14 C24 F0 T"Fan 0"
+alter C40 N300 W20 H2
+text T" %"
+button C76 F0 T" OFF " A"M106 P0 S0"
+;
+image R26 C28 L"fan1.img"
+;text R26 C24 F0 T"Fan 1"
+alter C40 N301 W20 H2
+text T" %"
+button C76 F0 T" OFF " A"M106 P1 S0"
+;
+image R38 C28 L"fan2.img"
+;text R38 C24 F0 T"Fan 2"
+alter C40 N302 W20 H2
+text T" %"
+button C76 F0 T" OFF " A"M106 P2 S0"
+;
+button R50 C23 T"All On" A"M98 P#0" L"/menu/fansOn.g"
+button R50 C70 T"All Off" A"M98 P#0" L"/menu/fansOff.g"

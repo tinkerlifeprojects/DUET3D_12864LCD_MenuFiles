@@ -1,0 +1,26 @@
+button R0 C0 W35 F0 T"Back" A"return|return"
+image C35 L"vline.img
+text R0 C36 W92 H1 F0 T"CHANGE FILAMENT"
+image R11 C0 L"hline.img"
+;
+image R16 C38 L"temp.img"
+alter C50 N100 W20 H2
+text T" / "
+value N0 W20
+text T"°C"
+;
+button R30 C10 W35 T"Unload" A"M98 P#0" L"/menu/unload.g"
+button C48 T"-5 " A"M98 P#0" L"/menu/Em5.g"
+button C65 T"+5 " A"M98 P#0" L"/menu/Ep5.g"
+button C84 W35 T"Load" A"M98 P#0" L"/menu/load.g"
+;
+;alter R40 C50 N513 D1 W30 H2
+button R44 C20 W88 F0 T"back to move" A"return"
+;
+;text R54 C10 T" Position "
+;value N513 H2 W20
+;text T"mm"
+;text R54 C60 T"E0"
+;value H2 W25 N100
+;text T"/"
+;value N0

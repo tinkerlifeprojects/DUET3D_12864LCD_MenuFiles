@@ -1,0 +1,15 @@
+button R0 C0 W35 F0 T"Back" A"return|return"
+image C35 L"vline.img
+text R0 C36 W92 F0 H1 T"ABOUT PRINTER"
+image R11 C0 L"hline.img"
+;
+text R14 C38 F0 T"IP Address: "
+value R26 C30 W15 H1 N530
+text W3 H1 T"."
+value W15 H1 N531
+text W3 H1 T"."
+value W15 H1 N532
+text W3 H1 T"."
+value W15 H1 N533
+;
+text R42 C20 F0 T"TinkerLCD Ver 1.0"

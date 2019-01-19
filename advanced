@@ -1,0 +1,7 @@
+button R0 C0 W35 F0 T"Back" A"return"
+image C35 L"vline.img
+text R0 C36 W92 F0 H1 T"ADVANCED"
+image R11 C0 L"hline.img"
+;
+button R14 C5 T"Bed Leveling   »" A"menu bedLevel" L"bedLevel"
+button R26 C5 T"About Printer »" A"menu about" L"about"
