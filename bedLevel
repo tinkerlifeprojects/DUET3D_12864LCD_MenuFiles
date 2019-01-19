@@ -18,7 +18,6 @@ text T"mm"
 image R27 C70 L"motor.img"
 button R27 C80 T"Off" A"M18"
 ;
-;button R39 C38 T"Motors Off" A"M18"
 text C42 W40 H1 R39 T"Move to:"
 button R51 C5 W36 H2 T"Point 1" A"M98 P#0" L"/menu/point1.g"
 button R51 C46 W36 H2 T"Point 2" A"M98 P#0" L"/menu/point2.g"

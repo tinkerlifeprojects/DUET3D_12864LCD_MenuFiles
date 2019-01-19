@@ -21,13 +21,4 @@ button C108 T"+20 " A"M98 P#0" L"/menu/Ep20.g"
 ;button R51 C5 F0 T"Allow Cold Extrusion" A"M302 P1"
 ;button R63 C5 F0 T"Disallow Cold Extrusion" A"M302 P0"
 ;
-;alter R40 C50 N513 D1 W30 H2
 button R44 C20 W88 F0 T"Change Filament" A"menu changeFilament" L"changeFilament"
-;
-;text R54 C10 T" Position "
-;value N513 H2 W20
-;text T"mm"
-;text R54 C60 T"E0"
-;value H2 W25 N100
-;text T"/"
-;value N0

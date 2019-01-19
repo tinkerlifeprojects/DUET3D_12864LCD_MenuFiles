@@ -1,6 +1,6 @@
-button R0 C0 W35 F0 T"Back" A"return|return"
+button R0 C0 F0 W35 T"Back" A"return|return"
 image C35 L"vline.img
-text R0 C36 W92 F0 H1 T"ABOUT PRINTER"
+text R0 C36 F0 W92 H1 T"ABOUT PRINTER"
 image R11 C0 L"hline.img"
 ;
 text R14 C38 F0 T"IP Address: "

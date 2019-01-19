@@ -5,17 +5,6 @@ text R0 C2 F0 T"MENU"
 image C35 L"vline.img
 button R0 C36 W92 F0 T"Back to Info Screen" A"return"
 image R11 C0 L"hline.img"
-; WARNING: returns to e_main, timeout will eventually take to main
-;
-; text R C5 F1 T"Debug" A""
-; TODO: these two need to occupy the same display location; the firmware will
-;   decide based on printing status which one to display
-;button R13 C5 F0 V3 T"Preheat »" A"M140 S50|menu heat" L"heat"
-;button R25 C5 F0 V3 T"Move Axis »" A"menu move" L"move"
-;button R37 C5 F0 V3 T"Filament »" A"M104 S190 T0|menu filament" L"filament"
-;button R49 C5 F0 V3 T"Build Plate »" A"menu bedLevel" L"bedLevel"
-;button R61 C5 F0 V3 T"Run Macro »" A"menu macros" L"macros"
-;button R73 C5 F0 V3 T"Advanced »" A"menu advanced" L"advanced"
 ;
 button R13 C1 F0 V3 H0 T"Preheat      »" A"menu heat" L"heat"
 button R25 C1 F0 V3 H0 T"Print          »" A"menu listFilesSD0" L"listFilesSD0"
